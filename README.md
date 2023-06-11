@@ -10,7 +10,7 @@ Adds 14 craftable pillows to the game. You can sit on them!
 
 - Every surface activates different buffs (optional):
 
-|Type|Temperature bonus|Fatigue|
+|Type|Temperature bonus|Fatigue gain|
 | ------------- | ------------- | ------------- |
 |Pillow (modded)| 2°C|-30%|
 |Pillow (vanilla)| 2°C|-30%|
@@ -24,6 +24,7 @@ Adds 14 craftable pillows to the game. You can sit on them!
 |Moosehide (cured)| 3°C|-50%|
 |Rabbithide (cured)| 1°C|-20%|
 |Bed| 4°C|-50%|
+|Bunkbed| 4°C|-50%|
 |Bedroll| 4°C|-50%|
 |Bearskin bedroll| 5°C|-50%|
 |Toilet|-2°C|+20%|

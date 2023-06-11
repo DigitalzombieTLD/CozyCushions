@@ -7,7 +7,7 @@ using Il2Cpp;
 using UnityEngine.Windows.WebCam;
 
 namespace CozyCushions
-{
+{   
     [HarmonyLib.HarmonyPatch(typeof(GearItem), "Awake")]
     public class pillowComponentPatcher
     {
@@ -99,7 +99,7 @@ namespace CozyCushions
                 {
                     fatigueValue = (fatigueValue / 100) * 60;
                 }
-                else if (SitOnMe._currentlySittingOn._fluffType == SitOnMe.FluffType.Bedroll || SitOnMe._currentlySittingOn._fluffType == SitOnMe.FluffType.BedrollBearskin || SitOnMe._currentlySittingOn._fluffType == SitOnMe.FluffType.Bed)
+                else if (SitOnMe._currentlySittingOn._fluffType == SitOnMe.FluffType.Bedroll || SitOnMe._currentlySittingOn._fluffType == SitOnMe.FluffType.BedrollBearskin || SitOnMe._currentlySittingOn._fluffType == SitOnMe.FluffType.Bed || SitOnMe._currentlySittingOn._fluffType == SitOnMe.FluffType.Bunkbed)
                 {
                     fatigueValue = (fatigueValue / 100) * 50;
                 }

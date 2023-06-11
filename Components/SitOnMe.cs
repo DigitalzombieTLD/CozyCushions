@@ -36,16 +36,16 @@ namespace CozyCushions
         private Dictionary<FluffType, Vector3> _centerOffset = new Dictionary<FluffType, Vector3>
         {
             { FluffType.None, new Vector3(0, 0, 0) },
-            { FluffType.PillowDZ, new Vector3(0, 0.3f, 0.0f)},
+            { FluffType.PillowDZ, new Vector3(0, 0.3f, 0.335f)},
             { FluffType.PillowHL, new Vector3(0, 0.3f, 0)  },
             { FluffType.Sofa, new Vector3(0, 0, 0) },
             { FluffType.Chair, new Vector3(0, 0.58f, 0) },
             { FluffType.CushionedChair, new Vector3(0, 0.40f, 0) },
-            { FluffType.CushionedBench, new Vector3(0, 0.40f, 0) },
+            { FluffType.CushionedBench, new Vector3(0, 0.10f, 0) },
             { FluffType.ArmChair, new Vector3(0, 0.40f, 0) },
-            { FluffType.Bed, new Vector3(0, 0.43f, 0) },
+            { FluffType.Bed, new Vector3(0, 0.45f, 0) },
             { FluffType.Bunkbed, new Vector3(0, 0.0f, 0) },
-            { FluffType.Bedroll, new Vector3(0, 0.3f, 0) },
+            { FluffType.Bedroll, new Vector3(0, 0.1f, 0) },
             { FluffType.Bench, new Vector3(0, 1f, 0) },
             { FluffType.BedrollBearskin, new Vector3(0, 0.5f, 0) },
             { FluffType.Stool, new Vector3(0, 1f, 0) },
@@ -212,9 +212,9 @@ namespace CozyCushions
             if (_centerPoint == null)
             {
                 _centerPoint = new GameObject("CenterPoint");
-
+                
                 _centerPoint.transform.parent = this.transform;
-                _centerPoint.transform.localPosition = _centerOffset[_fluffType];
+                _centerPoint.transform.localPosition = _centerOffset[_fluffType];                
             }
         }
 
@@ -370,6 +370,7 @@ namespace CozyCushions
                 CreateCenterpoint();
 
                 _bedComponent = this.gameObject.GetComponent<Bed>();
+                gameObject.transform.parent = null;
 
                 _isSetup = true;
             }
@@ -451,7 +452,7 @@ namespace CozyCushions
                     GameManager.GetFreezingComponent().m_MaxTemperatureBonusFromRunning = 1f;
                     GameManager.GetFreezingComponent().m_HoldRunningTemperatureBonusMinutes = 60f;
                 }
-                else if (_fluffType == FluffType.Bed || _fluffType == FluffType.Bedroll)
+                else if (_fluffType == FluffType.Bed || _fluffType == FluffType.Bedroll || _fluffType == FluffType.Bunkbed)
                 {
                     GameManager.GetFreezingComponent().m_TemperatureBonusFromRunning = 4f;
                     GameManager.GetFreezingComponent().m_MaxTemperatureBonusFromRunning = 4f;
