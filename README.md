@@ -4,31 +4,31 @@
 
 Adds 14 craftable pillows to the game. You can sit on them!
 
-- Configurable hotkey for sitting/standing up
+- Configurable hotkey for sitting/standing up 
 
 - Sit on every "sittable" surface -> mod pillows, vanilla pillows, chairs, benches, sofas, stools, (cured) pelts/hides, bedrolls, beds, toilets
 
 - Every surface activates different buffs (optional):
 
 [Type]                  [Temperature bonus]   [Fatigue]
-[Pillow (modded)]       [ 2캜]                [-30%]
-[Pillow (vanilla)]      [ 2캜]                [-30%]
-[Cushioned bench]       [ 2캜]                [-30%]
-[Cushioned chair]       [ 2캜]                [-30%]
-[Armchair]              [ 2캜]                [-40%]
-[Sofa]                  [ 2캜]                [-40%]
-[Wolfhide (cured)]      [ 2캜]                [-30%]
-[Leatherhide (cured)]   [ 2캜]                [-30%]
-[Bearhide (cured)]      [ 3캜]                [-40%]
-[Moosehide (cured)]     [ 3캜]                [-50%]
-[Rabbithide (cured)]    [ 1캜]                [-20%]
-[Bed]                   [ 4캜]                [-50%]
-[Bedroll]               [ 4캜]                [-50%]
-[Bearskin bedroll]      [ 5캜]                [-50%]
-[Toilet]                [-2캜]                [+20%]
-[Bench]                 [ 0캜]                [-20%]
-[Stool]                 [ 0캜]                [-20%]
-[Chair]                 [ 0캜]                [-20%]
+[Pillow (modded)]       [ 2째C]                [-30%]
+[Pillow (vanilla)]      [ 2째C]                [-30%]
+[Cushioned bench]       [ 2째C]                [-30%]
+[Cushioned chair]       [ 2째C]                [-30%]
+[Armchair]              [ 2째C]                [-40%]
+[Sofa]                  [ 2째C]                [-40%]
+[Wolfhide (cured)]      [ 2째C]                [-30%]
+[Leatherhide (cured)]   [ 2째C]                [-30%]
+[Bearhide (cured)]      [ 3째C]                [-40%]
+[Moosehide (cured)]     [ 3째C]                [-50%]
+[Rabbithide (cured)]    [ 1째C]                [-20%]
+[Bed]                   [ 4째C]                [-50%]
+[Bedroll]               [ 4째C]                [-50%]
+[Bearskin bedroll]      [ 5째C]                [-50%]
+[Toilet]                [-2째C]                [+20%]
+[Bench]                 [ 0째C]                [-20%]
+[Stool]                 [ 0째C]                [-20%]
+[Chair]                 [ 0째C]                [-20%]
 
 
 # Requires
