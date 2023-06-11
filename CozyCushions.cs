@@ -13,13 +13,7 @@ namespace CozyCushions
 		{    
             Settings.OnLoad();
         }
-
-        public override void OnSceneWasLoaded(int buildIndex, string sceneName)
-		{
-       
-
-
-        }
+              
 
         public override void OnUpdate()
         {
@@ -28,21 +22,14 @@ namespace CozyCushions
                 PlayerManager currentPlayerManager = GameManager.GetPlayerManagerComponent();
                 GameObject targetObject = currentPlayerManager.GetInteractiveObjectUnderCrosshairs(2.5f);
 
-                if (targetObject != null && targetObject.name.Contains("PillowDZ"))
+                if (targetObject != null)
                 {
-                    if (PillowManager.playerIsSitting)
+                    SitOnMe foundSitItem = targetObject.transform.GetComponent<SitOnMe>();
+
+                    if (foundSitItem)
                     {
-                        PillowManager.StandUp();
-                        return;
+                        foundSitItem.Sit();                       
                     }
-
-
-                    PillowItem foundPillow = targetObject.transform.GetComponent<PillowItem>();
-
-                    if(foundPillow != null)
-                    {
-                        PillowManager.SitDown(foundPillow);
-                    }                   
                 }
             }
         }

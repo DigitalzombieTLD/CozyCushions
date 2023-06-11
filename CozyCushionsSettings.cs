@@ -9,20 +9,13 @@ namespace CozyCushions
         [Section("Hotkeys")]
 
         [Name("Sit down / stand up")]
-        [Description("Aim at pillow and press button to sit down or stand up")]
+        [Description("Aim at pillows, beds, bedrolls, benches, chairs, stools, cured hides/pelts, toilets")]
         public KeyCode interactButton = KeyCode.Mouse2;
 
-        [Section("General")]
-
-        [Name("Head height")]
-        [Description("Adjust head height while sitting")]
-        [Slider(0.5f, 1.8f)]
-        public float headHeight = 1f;
-
-
-        [Name("Fatigue loss")]
-        [Description("When disabled, you won't get tired while sitting")]
-        public bool fatigueLoss = true;
+        
+        [Name("Buffs")]
+        [Description("Enable different buffs while sitting")]
+        public bool enableBuffs = true;
 
 
         protected override void OnConfirm()
