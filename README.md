@@ -11,8 +11,11 @@ Adds 14 craftable pillows to the game. You can sit on them!
 - Every surface activates different buffs (optional):
 
 [Type]                  [Temperature bonus]   [Fatigue]
+
 [Pillow (modded)]       [ 2°C]                [-30%]
+
 [Pillow (vanilla)]      [ 2°C]                [-30%]
+
 [Cushioned bench]       [ 2°C]                [-30%]
 [Cushioned chair]       [ 2°C]                [-30%]
 [Armchair]              [ 2°C]                [-40%]
