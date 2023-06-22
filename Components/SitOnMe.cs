@@ -204,7 +204,7 @@ namespace CozyCushions
                 }
             }
 
-            return _staticHeightOffset + _centerPoint.transform.position;
+            return _staticHeightOffset + _centerPoint.transform.position;            
         }
 
         private void CreateCenterpoint()
@@ -370,7 +370,7 @@ namespace CozyCushions
                 CreateCenterpoint();
 
                 _bedComponent = this.gameObject.GetComponent<Bed>();
-                gameObject.transform.parent = null;
+                
 
                 _isSetup = true;
             }

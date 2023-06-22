@@ -9,9 +9,13 @@ namespace CozyCushions
 {
 	public class CozyCushionsMain : MelonMod
 	{
+        public static int layerMask = 0;
+
         public override void OnInitializeMelon()
 		{    
             Settings.OnLoad();
+            layerMask |= 1 << 17; // gear layer
+            layerMask |= 1 << 19; // InteractiveProp layer
         }
               
 

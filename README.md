@@ -1,4 +1,4 @@
-## CozyCushions for TheLongDark v1.5.0
+## CozyCushions for TheLongDark v1.6.0
 
 ![Screenshot](https://github.com/DigitalzombieTLD/ModListJson/blob/3a3021fd7542b5fd6a03d614dce9f3e7cbcf4442/list_icon_cozycushions.png)
 
@@ -38,6 +38,9 @@ Adds 14 craftable pillows to the game. You can sit on them!
 - ModSettings
 
 # Changelog
+- v1.5.0
+BetterBases compatibility update 
+
 - v1.5.0
 5 more pillows,
 universal sitting,

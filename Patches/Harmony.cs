@@ -55,7 +55,7 @@ namespace CozyCushions
 
                 if (sitComponent == null)
                 {
-                    sitComponent = __instance.gameObject.AddComponent<SitOnMe>();
+                   sitComponent = __instance.gameObject.AddComponent<SitOnMe>();
                 }
             }
         }
