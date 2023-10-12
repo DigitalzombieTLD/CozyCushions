@@ -10,7 +10,6 @@ namespace CozyCushions
 	public class CozyCushionsMain : MelonMod
 	{
         public static int layerMask = 0;
-
         public override void OnInitializeMelon()
 		{    
             Settings.OnLoad();
@@ -35,7 +34,7 @@ namespace CozyCushions
                         foundSitItem.Sit();                       
                     }
                 }
-            }
+            }           
         }
     }
 }

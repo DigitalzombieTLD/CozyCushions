@@ -4,7 +4,6 @@ using Il2CppInterop;
 using Il2CppInterop.Runtime.Injection; 
 using System.Collections;
 using Il2Cpp;
-using static Il2Cpp.ak;
 
 namespace CozyCushions
 {
