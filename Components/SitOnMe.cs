@@ -132,7 +132,6 @@ namespace CozyCushions
             _playerIsSitting = true;
             _isBeingSitOn = true;
 
-            CameraFade.StartAlphaFade(Color.black, true, 1.8f, 0f, null);
             GameManager.GetVpFPSPlayer().EnableCrouch(true);
             m_StartCameraFOV = GameManager.GetMainCamera().fieldOfView;
             m_StartPitchLimit = GameManager.GetVpFPSCamera().RotationPitchLimit;
@@ -167,7 +166,7 @@ namespace CozyCushions
 
             MelonLogger.Msg("Standing up ...");
             GameManager.GetVpFPSPlayer().EnableCrouch(false);
-            CameraFade.StartAlphaFade(Color.black, true, 1.2f, 0f, null);
+        
 
             GameManager.GetVpFPSCamera().m_PanViewCamera.m_IsDetachedFromPlayer = false;
             //GameManager.GetPlayerManagerComponent().SetControlMode(PlayerControlMode.Normal);

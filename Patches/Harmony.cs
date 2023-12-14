@@ -4,7 +4,6 @@ using Il2CppInterop;
 using Il2CppInterop.Runtime.Injection; 
 using System.Collections;
 using Il2Cpp;
-using UnityEngine.Windows.WebCam;
 
 namespace CozyCushions
 {   
@@ -80,7 +79,7 @@ namespace CozyCushions
 
 
 
-    [HarmonyLib.HarmonyPatch(typeof(Fatigue), "AddFatigue")]
+    [HarmonyLib.HarmonyPatch(typeof(Fatigue), "AddFatigue", new Type[] { typeof(float) })]
     public class fatiguePatcher
     {
         public static void Prefix(ref Fatigue __instance, ref float fatigueValue)
